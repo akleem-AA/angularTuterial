@@ -15,12 +15,12 @@ export class AppComponent {
   // secondFun(){
   //   return this.lastName;
   // }
-  data=[];
-  constructor(private user:UserDataService){
-    this.user.getData().subscribe(data=>{
-      console.warn(data)
-      this.data=data
-    })
-  }
+  // data=[];
+  // constructor(private user:UserDataService){
+  //   this.user.getData().subscribe(data=>{
+  //     console.warn(data)
+  //     this.data=data
+  //   })
+  // }
   
 }
