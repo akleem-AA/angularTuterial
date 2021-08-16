@@ -8,6 +8,7 @@ import{UserDataService} from './user-data.service'
 export class AppComponent {
   title = 'LeanAngular';
   name='Akleem ';
+  show='yes';
   // lastName='khan';
   // fistFun(){
   //   return 'more lean then more earn';

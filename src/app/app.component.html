@@ -16,5 +16,12 @@
     </tr>
 
 </table> -->
-<app-login></app-login>
-<app-sinup></app-sinup>
+<!-- <app-login></app-login>
+<app-sinup></app-sinup> -->
+<h1 *ngIf="show=='yes'; then elseBox  ">
+    this is fist ifCondtion
+</h1>
+<!-- <ng-templete #elseBox>
+    <h1>the second IfElseCondtion</h1>
+</ng-templete> -->
+<h1 #elseBox>string else condtion check</h1>
