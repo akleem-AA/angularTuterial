@@ -18,10 +18,27 @@
 </table> -->
 <!-- <app-login></app-login>
 <app-sinup></app-sinup> -->
-<h1 *ngIf="show=='yes'; then elseBox  ">
+<!-- <h1 *ngIf="show=='yes'; then elseBox  ">
     this is fist ifCondtion
-</h1>
+</h1> -->
 <!-- <ng-templete #elseBox>
     <h1>the second IfElseCondtion</h1>
 </ng-templete> -->
-<h1 #elseBox>string else condtion check</h1>
+<!-- <h1 #elseBox>string else condtion check</h1> -->
+<div [ngSwitch]="color">
+    <h1 style="color: red;" *ngSwitchCase="'red'">hello red color</h1>
+</div>
+<h4 *ngFor="let item of data">{{item}}</h4>
+<table border="1">
+    <tr>
+        <td>name</td>
+        <td>age</td>
+    </tr>
+    <tr *ngFor="let itme1 of data1">
+        <td>{{itme1.name}}</td>
+        <td>{{itme1.age}}</td>
+        <td>{{itme1.email}}</td>
+        
+        
+    </tr>
+</table>
